@@ -1,0 +1,57 @@
+###########################################################
+# This file is part of the project:                       #
+# linups-Linux-Packages-Update-Script                     #
+#                                                         #
+# License: GPL-3.0+                                       #
+# License URL: https://www.gnu.org/licenses/gpl-3.0.html  #
+#                                                         #
+# This program is free software: you can redistribute it  #
+# and/or modify it under the terms of the GNU General     #
+# Public License as published by the Free Software        #
+# Foundation, either version 3 of the License, or (at     #
+# your option) any later version.                         #
+#                                                         #
+# This program is distributed in the hope that it will be #
+# useful, but WITHOUT ANY WARRANTY; without even the      #
+# implied warranty of MERCHANTABILITY or FITNESS FOR A    #
+# PARTICULAR PURPOSE. See the GNU General Public License  #
+# for more details.                                       #
+#                                                         #
+# You should have received a copy of the GNU General      #
+# Public License along with this program. If not, see     #
+# <http://www.gnu.org/licenses/>.                         #
+#---------------------------------------------------------#
+
+---------------------------------------------
+COMPATIBILITY - Version 0.1 (beta) linups (2025-04-12)
+---------------------------------------------
+
+**Last Updated:** 2025-04-12
+
+This file describes the compatibility of the `linups` script with different operating systems and software versions.
+
+| Operating System | Specific Version | Package Manager |  Support Status  | Additional Notes                  |
+|------------------|------------------|-----------------|------------------|-----------------------------------|
+| Linux            | Ubuntu / Debian  | APT             | Fully Supported  |                                   |
+| Linux            | Fedora           | DNF             | Fully Supported  |                                   |
+| Linux            | CentOS           | YUM             | Testing          |                                   |
+| Linux            | Arch Linux       | PACMAN          | Testing          |                                   |
+| Linux            | openSUSE         | ZYPPER          | Testing          |                                   |
+| Linux            | Any              | FLATPAK         | Fully Supported  | Requires Flatpak installation     |
+| Linux            | Any              | SNAP            | Fully Supported  | Requires Snapd installation       |
+| Linux            | Any              | BREW (Homebrew) | Fully Supported  | Requires Homebrew installation    |
+| macOS            | 10.15+           | N/A             | Not Supported    | Core functionality not applicable |
+| Windows          | 10, 11           | N/A             | Not Supported    | Core functionality not applicable |
+
+**Notes:**
+
+* Support for Windows is limited as the core functionality of `linups` is focused on Linux package management.
+* Support for macOS is limited as the core functionality of `linups` is focused on Linux package management.
+* Other Linux distributions may work but have not been extensively tested.
+* Ensure you have the necessary package manager versions installed on your system.
+
+**Support Status Legend:**
+
+* **Fully Supported:** Tested and working correctly.
+* **Not Supported:** Not tested or does not work correctly.
+* **Testing:** In the testing process.

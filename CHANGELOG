@@ -1,0 +1,80 @@
+###########################################################
+# This file is part of the project:                       #
+# linups-Linux-Packages-Update-Script                     #
+#                                                         #
+# License: GPL-3.0+                                       #
+# License URL: https://www.gnu.org/licenses/gpl-3.0.html  #
+#                                                         #
+# This program is free software: you can redistribute it  #
+# and/or modify it under the terms of the GNU General     #
+# Public License as published by the Free Software        #
+# Foundation, either version 3 of the License, or (at     #
+# your option) any later version.                         #
+#                                                         #
+# This program is distributed in the hope that it will be #
+# useful, but WITHOUT ANY WARRANTY; without even the      #
+# implied warranty of MERCHANTABILITY or FITNESS FOR A    #
+# PARTICULAR PURPOSE. See the GNU General Public License  #
+# for more details.                                       #
+#                                                         #
+# You should have received a copy of the GNU General      #
+# Public License along with this program. If not, see     #
+# <http://www.gnu.org/licenses/>.                         #
+#---------------------------------------------------------#
+
+---------------------------------------------
+CHANGELOG - Version 0.1 (beta) linups (2025-04-12)
+---------------------------------------------
+
+* **New Features:**
+    * **2025-04-12 (initial_release) Package Management Implementation:**
+        * Introduced core functionality to manage installed packages across
+        various Linux distributions. This includes updating, fixing, and
+        cleaning packages for the following package managers: APT, DNF, YUM,
+        PACMAN, ZYPPER, FLATPAK, SNAP, and BREW (Homebrew). The implementation
+        leverages conditional logic based on environment detection to execute
+        the appropriate package manager commands.
+        
+    * **2025-04-12 (initial_release) Logging Subsystem Implementation:**
+        * Implemented a configurable logging subsystem controlled by the
+        `LOG_MODE` variable. When enabled, the script initializes a log file
+        (`linups_log.log` by default) within its execution directory. Users can
+        customize the log file path via `LOG_DIR` (expecting an absolute path)
+        and the filename via `LOG_FILE`. Input validation ensures that custom
+        path and filename variables are enclosed in double quotes as a
+        prerequisite for proper string handling within the shell environment.
+        
+    * **2025-04-12 (initial_release) Internationalization (i18n) Framework:**
+        * Established a basic i18n framework supporting English, Portuguese
+        (Brazil), and Spanish. This initial implementation likely involves
+        separate language files or in-script variable mapping to provide
+        localized output for user-facing messages. Future iterations will focus
+        on more robust localization libraries or techniques.
+        
+    * **2025-04-12 (initial_release) Localization (l10n) Auto-Detection:**
+        * Implemented an initial localization mechanism that attempts to
+        automatically detect the system's language settings. The `SYSTEM_LANG`
+        variable allows manual override. The current implementation supports
+        `en_US` (default fallback), `pt_BR`, and `es_ES` locale codes, ensuring
+        a baseline level of language adaptation based on the execution environment.
+
+**Known Issues & Future Considerations:**
+
+* This is the initial beta release; therefore, unexpected behavior and bugs are
+anticipated. Comprehensive testing across various Linux distributions and package
+manager versions is ongoing.
+
+* The i18n and l10n frameworks are in their early stages. Future development will
+focus on expanding language support and refining the localization logic for edge
+cases.
+
+* The logging subsystem provides basic file-based logging. Future enhancements may
+include configurable log levels and integration with system logging facilities.
+
+**Developer Notes:**
+
+* This release marks the foundational implementation of core package management,
+logging, and basic internationalization/localization features. Subsequent releases
+will incrementally build upon this foundation with a focus on stability, expanded
+functionality, and user feedback. Please report any encountered issues or feature
+requests.

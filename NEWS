@@ -1,0 +1,124 @@
+###########################################################
+# This file is part of the project:                       #
+# linups-Linux-Packages-Update-Script                     #
+#                                                         #
+# License: GPL-3.0+                                       #
+# License URL: https://www.gnu.org/licenses/gpl-3.0.html  #
+#                                                         #
+# This program is free software: you can redistribute it  #
+# and/or modify it under the terms of the GNU General     #
+# Public License as published by the Free Software        #
+# Foundation, either version 3 of the License, or (at     #
+# your option) any later version.                         #
+#                                                         #
+# This program is distributed in the hope that it will be #
+# useful, but WITHOUT ANY WARRANTY; without even the      #
+# implied warranty of MERCHANTABILITY or FITNESS FOR A    #
+# PARTICULAR PURPOSE. See the GNU General Public License  #
+# for more details.                                       #
+#                                                         #
+# You should have received a copy of the GNU General      #
+# Public License along with this program. If not, see     #
+# <http://www.gnu.org/licenses/>.                         #
+#---------------------------------------------------------#
+
+---------------------------------------------
+NEWS - Changes in version 0.1 (beta) linups (2025-04-12)
+---------------------------------------------
+
+* **New Features:**
+    * Updates / fixes / cleans the installed packages on the system for the
+      following package managers:
+        * APT;
+        * DNF;
+        * YUM;
+        * PACMAN;
+        * ZYPPER;
+        * FLATPAK;
+        * SNAP;
+        * BREW (HOMEBREW).
+
+    * LOGS system (Must be enabled inside the 'linups.sh' script by changing the
+      'LOG_MODE' variable).
+        * When active, linups creates a new log file in the same directory where
+          it is "installed". (The default file name is 'linups_log.log');
+        * The directory where the log file is saved can be changed by adding the
+          full path (absolute path) to the directory in the 'LOG_DIR' variable;
+        * The file name can be changed by adding the new value to the 'LOG_FILE'
+          variable.
+        PS: ALL NEW VALUES MUST BE ENCLOSED IN DOUBLE QUOTES "".
+
+    * Internationalization system (languages):
+        * English;
+        * Portuguese (Brazil);
+        * Spanish.
+
+    * Localization system (automatically identifies the system language):
+        PS: IT IS POSSIBLE TO CHANGE THE LANGUAGE BY ALTERING THE VALUE OF THE
+            'SYSTEM_LANG' VARIABLE.
+        * English = en_US (default, if system localization is not supported);
+        * Portuguese (Brazil) = pt_BR;
+        * Spanish = es_ES.
+
+* **Feature Improvements:**
+    * None.
+
+* **Feature Removals:**
+    * None.
+
+* **Compatibility Changes:**
+    * None.
+
+* **Deprecations:**
+    * None.
+
+* **Bug Fixes:**
+    * None.
+
+* **Security Fixes:**
+    * None.
+
+* **Stability Improvements:**
+    * None.
+
+* **Performance Improvements:**
+    * None.
+
+* **Optimizations:**
+    * None.
+
+* **Refactoring:**
+    * None.
+
+* **Documentation Improvements:**
+    * None.
+
+* **User Interface (UI) Improvements:**
+    * None.
+
+* **User Experience (UX) Improvements:**
+    * None.
+
+* **Internationalization (i18n):**
+    * Added support for the following languages:
+        * English;
+        * Portuguese (Brazil);
+        * Spanish.
+
+* **Localization (l10n):**
+    * Specific adaptations for the following locales:
+        * English = en_US (default, if system localization is not supported);
+        * Portuguese (Brazil) = pt_BR;
+        * Spanish = es_ES.
+
+* **Dependency Updates:**
+    * None.
+
+* **Developer Information:**
+    * Version 0.1 (beta). Expect to find errors or bugs, please report them if
+      you find any or have suggestions, thank you.
+
+* **Acknowledgements:**
+    * GOD;
+    * Lucas Bombarda (DevDock);
+    * Kefton (DevDock).
